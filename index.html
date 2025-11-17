@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mangesh Waghmare — Portfolio</title>
+    <meta
+      name="description"
+      content="Simple modern portfolio — About, Skills, Projects, Contact."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="brand">
+          <div class="logo">M</div>
+          <div>
+            <div class="brand-name">Mangesh Waghmare </div>
+            <div class="tag">Frontend Developer</div>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="controls">
+          <button id="themeToggle" class="ghost" title="Toggle theme">
+            🌗
+          </button>
+          <a class="btn" href="#projects">View Work</a>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-left">
+            <div class="reveal">
+              <h1>
+                Hey — I’m <span class="accent">Mangesh Waghmare</span>
+                <div class="typing" id="typing"></div>
+              </h1>
+              <p class="lead">
+                I build clean, modern interfaces and simple interactions. I like
+                turning ideas into delightful, accessible web experiences.
+              </p>
+              <div class="cta">
+                <a class="btn" href="#contact">Hire me</a>
+                <a class="ghost" href="#projects">See projects</a>
+              </div>
+            </div>
+
+            <div class="card reveal" id="about">
+              <h3 class="sec-title">About</h3>
+              <p>
+                I’m a frontend dev who loves minimal design, smooth animations
+                and fast user experiences. I work with HTML, CSS and vanilla JS
+                — and ship clean code.
+              </p>
+              <a class="ghost" href="#" download="Manguuu_Resume.pdf"
+                >Download Resume</a
+              >
+            </div>
+          </div>
+
+          <aside class="profile-card reveal">
+            <div class="avatar">MG</div>
+            <div class="profile-txt">
+              <div class="name">Manguuu</div>
+              <div class="tag small">Frontend Developer</div>
+              <div class="small">Based in India • Open to remote</div>
+            </div>
+          </aside>
+        </section>
+
+        <section id="skills" class="reveal">
+          <h2 class="sec-title">Skills</h2>
+          <div class="grid">
+            <div class="card skill">
+              <div class="meta">
+                <strong class="title">Frontend</strong><span>90%</span>
+              </div>
+              <div class="bar"><i style="width: 90%"></i></div>
+              <small>HTML • CSS • JavaScript • Responsive Layouts</small>
+            </div>
+
+            <div class="card skill">
+              <div class="meta">
+                <strong class="title">Design</strong><span>75%</span>
+              </div>
+              <div class="bar"><i style="width: 75%"></i></div>
+              <small>UI/UX basics • Figma • Prototyping</small>
+            </div>
+
+            <div class="card skill">
+              <div class="meta">
+                <strong class="title">Tools</strong><span>80%</span>
+              </div>
+              <div class="bar"><i style="width: 80%"></i></div>
+              <small>Git • Vercel • Chrome DevTools</small>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="reveal">
+          <h2 class="sec-title">Projects</h2>
+          <div class="grid">
+            <div class="card project">
+              <img
+                src="https://picsum.photos/seed/p1/600/400"
+                alt="Project preview"
+              />
+              <div>
+                <div class="meta-row">
+                  <strong class="title">Portfolio (this site)</strong>
+                  <div class="chip">HTML • CSS • JS</div>
+                </div>
+                <p>
+                  A clean single-file portfolio with theme toggle, typing effect
+                  and a contact form.
+                </p>
+                <div class="links">
+                  <a class="ghost" href="#">Live</a
+                  ><a class="ghost" href="#">Code</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card project">
+              <img
+                src="https://picsum.photos/seed/p2/600/400"
+                alt="Project preview"
+              />
+              <div>
+                <div class="meta-row">
+                  <strong class="title">Weather App</strong>
+                  <div class="chip">API • JS</div>
+                </div>
+                <p>
+                  Weather searcher with icons, gradients and localStorage for
+                  last city.
+                </p>
+                <div class="links">
+                  <a class="ghost" href="#">Live</a
+                  ><a class="ghost" href="#">Code</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card project">
+              <img
+                src="https://picsum.photos/seed/p3/600/400"
+                alt="Project preview"
+              />
+              <div>
+                <div class="meta-row">
+                  <strong class="title">To-Do App</strong>
+                  <div class="chip">LocalStorage</div>
+                </div>
+                <p>
+                  A lightweight todo app with state persistence and DOM
+                  manipulation.
+                </p>
+                <div class="links">
+                  <a class="ghost" href="#">Live</a
+                  ><a class="ghost" href="#">Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="reveal">
+          <h2 class="sec-title">Contact</h2>
+          <div class="card">
+            <form
+              id="contactForm"
+              action="https://formsubmit.co/your-email@example.com"
+              method="POST"
+            >
+              <input name="name" placeholder="Your name" required />
+              <input name="email" type="email" placeholder="Email" required />
+              <textarea
+                name="message"
+                placeholder="Message"
+                required
+              ></textarea>
+              <div class="form-footer">
+                <button type="submit" class="btn">Send message</button>
+                <div class="hint">
+                  Or email me at <strong>you@me.com</strong>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div>© <span id="year"></span> Manguuu — Built with ❤️</div>
+        <div class="socials">
+          <a href="#" class="ghost">GitHub</a>
+          <a href="#" class="ghost">LinkedIn</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
